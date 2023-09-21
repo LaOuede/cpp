@@ -10,7 +10,7 @@ Work in progress...
 
 <div align=center>
   
-The <b>C++</b> project involves an intensive, immersive coding experience in order to learn and practice C++ programming through a series of hands-on exercises and challenges. The difficulty of the exercises is graduated and allows to tackle different concepts related to object-oriented programming.
+The <b>C++</b> project involves an intensive, immersive coding experience in order to learn and practice C++ programming through a series of hands-on exercises and challenges. The difficulty of the exercises is graduated and allows to tackle different concepts related to object-oriented programming such as encapsulation, data hiding, inheritance, polymorphism...
 
 </div>
 
