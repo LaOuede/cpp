@@ -31,7 +31,7 @@ export HELP
 #------------------------------------------------------------------------------#
 
 # Executable name
-NAME		=	megaphone
+NAME		=	phonebook
 
 # Compiler and flags
 CC			=	c++
@@ -54,9 +54,9 @@ all : $(NAME)
 
 # Compilation
 $(NAME) : $(SRCS) $(HEADS) Makefile
-	@echo "\n---------------- 🟢 $GCompiling : $W$(notdir $<) ------------------"
+	@echo "\n--------------------- 🟢 $GCompiling$W ------------------------"
 	@$(CC) $(CPPFLAGS) $(SRCS) -o $(NAME)
-	@echo "\n$W--------------------- $(NAME) $Gcreated ✅ $W---------------------\n"
+	@echo "\n$W------------------ $(NAME) $Gcreated ✅ $W-------------------\n"
 
 # Remove objects and executables
 clean:

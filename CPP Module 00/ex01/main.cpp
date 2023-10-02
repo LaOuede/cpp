@@ -1,8 +1,11 @@
 #include <iostream>
 #include <string>
-#include "phonebook.hpp"
+#include "Phonebook.hpp"
+#include "Contact.hpp"
 
 int main( void ) {
 	Phonebook test;
+	Contact bob;
+
 	return 0;
 }

@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
-#include "phonebook.hpp"
+#include "Phonebook.hpp"
 
-Phonebook::Phonebook(std::string const contacts) : contacts() {
+Phonebook::Phonebook( void ) {
 	std::cout << "Phonebook has been created" << std::endl;
 	return;
 }

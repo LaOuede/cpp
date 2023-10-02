@@ -4,7 +4,7 @@
 class Student {
 
 	private:
-		std::string _login;
+		std::string _m_login;
 
 	public:
 		Student( void ); // permet de déclarer un constructeur
