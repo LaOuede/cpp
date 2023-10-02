@@ -4,8 +4,25 @@
 #include "Contact.hpp"
 
 int main( void ) {
-	Phonebook test;
-	Contact bob;
+	Phonebook phonebook;
+	Contact test;
+	std::string cmd;
+
+	std::cout << "--- Welcome to 📞 Phonebook 📞 ---" << std::endl;
+	std::cout << "-> ";
+	std::cin >> cmd;
+
+	if (cmd == "ADD") {
+		std::cout << "command ADD selected" << std::endl;
+		phonebook.addContact(test);
+	}
+	else if (cmd ==  "SEARCH") {
+		std::cout << "command SEARCH selected" << std::endl;
+	}
+	else {
+		std::cout << "quiting program..." << std::endl;
+		exit (0);
+	}
 
 	return 0;
 }

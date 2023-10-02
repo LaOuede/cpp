@@ -2,12 +2,16 @@
 #include <string>
 #include "Phonebook.hpp"
 
+void Phonebook::addContact ( Contact indiv ) {
+	indiv.setContact();
+}
+
 Phonebook::Phonebook( void ) {
-	std::cout << "Phonebook has been created" << std::endl;
+	std::cout << C_GRY << "Phonebook has been created" << C_WHT << std::endl;
 	return;
 }
 
 Phonebook::~Phonebook( void ) {
-	std::cout << "Phonebook has been destroyed" << std::endl;
+	std::cout << C_GRY << "Phonebook has been destroyed" << C_WHT << std::endl;
 	return;
 }
