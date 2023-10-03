@@ -1,4 +1,4 @@
-#include <iostream> // std::cout, std::endl
+#include <iostream> // std::cout, std::cin, std::endl
 #include <iomanip> // std::setw
 #include <string>
 #include "Contact.hpp"
