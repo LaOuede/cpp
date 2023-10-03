@@ -17,7 +17,9 @@ class Contact {
 	public:
 		Contact( void );
 		~Contact( void );
+		void displayContact ( void );
 		void setContact ( void );
+		std::string getInfos ( std::string element );
 
 	private:
 		std::string _m_firstName;

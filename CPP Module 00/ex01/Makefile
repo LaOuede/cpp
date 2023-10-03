@@ -81,16 +81,7 @@ re: clean
 
 # Make and run the program
 run : all
-	@echo "\n$W>>>>>>>>>>>>>>>>>>>>>>>>>>>> TESTS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n"
-	@echo "$YTest 1$W"
-	./$(NAME) "shhhhh... I think the students are asleep..."
-	@echo "$Y\nTest 2$W"
-	./$(NAME) Damnit " ! " "Sorry students, I thought this thing was off."
-	@echo "$Y\nTest 3$W"
-	./$(NAME)
-	@echo "$Y\nTest 4$W"
-	./$(NAME) "WAKE UP!"
-	@echo "\n$W>>>>>>>>>>>>>>>>>>>>>>>>> $WTESTS done ✅$W<<<<<<<<<<<<<<<<<<<<<<<<<<\n"
+	@./$(NAME)
 
 # Avoids file-target name conflicts
 .PHONY: all dir clean help pdf re run

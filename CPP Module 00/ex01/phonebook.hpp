@@ -19,7 +19,8 @@ class Phonebook {
 	public:
 		Phonebook( void );
 		~Phonebook( void );
-		void addContact( void );
+		void addContact( int index ) ;
+		void searchContact( int index );
 
 	private:
 		Contact _m_contacts[8];
