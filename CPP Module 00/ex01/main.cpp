@@ -4,21 +4,25 @@
 #include "Phonebook.hpp"
 #include "Contact.hpp"
 
+using std::cin;
+using std::cout;
+using std::endl;
+
 int main( void ) {
 	Phonebook phonebook;
 	std::string cmd;
 
-	std::cout << std::endl;
-	std::cout << C_BOL << "--- 🟢 Welcome to 📞 Phonebook 📞 ---\n" << C_WHT << std::endl;
+	cout << endl;
+	cout << C_BOL << "--- 🟢 Welcome to 📞 Phonebook 📞 ---\n" << C_WHT << endl;
 
 	do {
-		std::cout << "🔵 Phonebøøk$ ";
-		std::cin >> cmd;
+		cout << "🔵 Phonebøøk$ ";
+		cin >> cmd;
 		if (cmd ==  "SEARCH")
 			phonebook.searchContact();
 		else if (cmd == "ADD")
 			phonebook.addContact();
-	} while (cmd != "EXIT");
-	std::cout << C_BOL << "\n------- 🔴 quitting program... ------\n" << C_WHT << std::endl;
+	} while (! cin.fail() && cmd != "EXIT");
+	cout << C_BOL << "\n------- 🔴 quitting program... ------\n" << C_WHT << endl;
 	return 0;
 }
