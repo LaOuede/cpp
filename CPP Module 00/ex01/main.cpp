@@ -5,7 +5,6 @@
 
 int main( void ) {
 	Phonebook phonebook;
-	Contact test;
 	std::string cmd;
 
 	std::cout << "--- Welcome to 📞 Phonebook 📞 ---" << std::endl;
@@ -14,7 +13,7 @@ int main( void ) {
 
 	if (cmd == "ADD") {
 		std::cout << "command ADD selected" << std::endl;
-		phonebook.addContact(test);
+		phonebook.addContact();
 	}
 	else if (cmd ==  "SEARCH") {
 		std::cout << "command SEARCH selected" << std::endl;

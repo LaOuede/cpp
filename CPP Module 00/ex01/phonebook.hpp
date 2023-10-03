@@ -19,11 +19,10 @@ class Phonebook {
 	public:
 		Phonebook( void );
 		~Phonebook( void );
-		void addContact( Contact indiv );
+		void addContact( void );
 
 	private:
-		std::string const _m_contacts[8];
-		Contact _m_indiv;
+		Contact _m_contacts[8];
 };
 
 #endif

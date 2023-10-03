@@ -2,7 +2,7 @@
 #include <string>
 #include "Phonebook.hpp"
 
-void Phonebook::addContact ( Contact indiv ) {
+void Phonebook::addContact ( ) {
 	indiv.setContact();
 }
 

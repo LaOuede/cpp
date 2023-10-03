@@ -13,7 +13,7 @@ void Contact::setContact( void ) {
 	std::cin >> _m_phoneNumber;
 	std::cout << "Darkest secret : ";
 	std::cin >> _m_darkestSecret;
-	std::cout << C_GRY << "First name : " << _m_firstName << std::endl;
+	std::cout << C_BLU << "First name : " << _m_firstName << std::endl;
 	std::cout << "Last name : " << _m_lastName << std::endl;
 	std::cout << "Nickname : " << _m_nickname << std::endl;
 	std::cout << "Phone Number : " << _m_phoneNumber << std::endl;
@@ -21,11 +21,15 @@ void Contact::setContact( void ) {
 }
 
 Contact::Contact( void ) {
-	std::cout << C_GRY << "Contact has been created" << C_WHT << std::endl;
+	static int index = 0;
+	std::cout << C_GRY << "Contact " << index << " has been created" << C_WHT << std::endl;
+	index++;
 	return;
 }
 
 Contact::~Contact( void ) {
-	std::cout << C_GRY << "Contact has been destroyed" << C_WHT << std::endl;
+	static int index = 8;
+	std::cout << C_GRY << "Contact " << index << " has been destroyed" << C_WHT << std::endl;
+	index--;
 	return;
 }
