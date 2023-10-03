@@ -3,6 +3,10 @@
 #include <string>
 #include "Contact.hpp"
 
+using std::cin;
+using std::cout;
+using std::endl;
+
 std::string Contact::reSize( std::string str ) {
 	std::string new_str;
 
@@ -12,7 +16,6 @@ std::string Contact::reSize( std::string str ) {
 }
 
 std::string Contact::getInfos( std::string element ) {
-
 	if (element == "firstName") {
 		if (_m_firstName.size() > 10)
 			return (reSize( _m_firstName));
@@ -32,28 +35,28 @@ std::string Contact::getInfos( std::string element ) {
 }
 
 void Contact::displayContact( void ) {
-	std::cout << C_BLU << "\n----- Contact informations -----" << C_WHT << std::endl;
-	std::cout << "First name : " << _m_firstName << std::endl;
-	std::cout << "Last name : " << _m_lastName << std::endl;
-	std::cout << "Nickname : " << _m_nickname << std::endl;
-	std::cout << "Phone Number : " << _m_phoneNumber << std::endl;
-	std::cout << "Darkest secret : " << _m_darkestSecret << std::endl;
-	std::cout << C_BLU << "------------- end --------------\n" << C_WHT << std::endl;
+	cout << C_BLU << "\n----- Contact informations -----" << C_WHT << endl;
+	cout << "First name : " << _m_firstName << endl;
+	cout << "Last name : " << _m_lastName << endl;
+	cout << "Nickname : " << _m_nickname << endl;
+	cout << "Phone Number : " << _m_phoneNumber << endl;
+	cout << "Darkest secret : " << _m_darkestSecret << endl;
+	cout << C_BLU << "------------- end --------------\n" << C_WHT << endl;
 }
 
 void Contact::setContact( void ) {
-	std::cout << C_BLU << "\n----- Complete informations ------" << C_WHT << std::endl;
-	std::cout << "First name : ";
-	std::cin >> _m_firstName;
-	std::cout << "Last name : ";
-	std::cin >> _m_lastName;
-	std::cout << "Nickname : ";
-	std::cin >> _m_nickname;
-	std::cout << "Phone Number : ";
-	std::cin >> _m_phoneNumber;
-	std::cout << "Darkest secret : ";
-	std::cin >> _m_darkestSecret;
-	std::cout << C_BLU << "--------- Contact saved! ---------\n" << C_WHT << std::endl;
+	cout << C_BLU << "\n----- Complete informations ------" << C_WHT << endl;
+	cout << "First name : ";
+	cin >> _m_firstName;
+	cout << "Last name : ";
+	cin >> _m_lastName;
+	cout << "Nickname : ";
+	cin >> _m_nickname;
+	cout << "Phone Number : ";
+	cin >> _m_phoneNumber;
+	cout << "Darkest secret : ";
+	cin >> _m_darkestSecret;
+	cout << C_BLU << "--------- Contact saved! ---------\n" << C_WHT << endl;
 }
 
 Contact::Contact( void ) {

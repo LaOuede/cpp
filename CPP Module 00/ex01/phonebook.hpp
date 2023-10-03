@@ -19,13 +19,15 @@ class Phonebook {
 	public:
 		Phonebook( void );
 		~Phonebook( void );
-		void addContact( int index ) ;
-		bool checkIndex( int i ) ;
-		void displayInfos( int index ) ;
-		void searchContact( int index );
+		void addContact( void );
+		void displayInfos( int index );
+		void displayTab( void );
+		void searchContact( void );
 
 	private:
 		Contact _m_contacts[8];
+		int _m_nbContact;
+		int _m_index;
 };
 
 #endif
