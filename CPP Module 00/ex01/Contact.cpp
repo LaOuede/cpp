@@ -60,15 +60,13 @@ void Contact::setContact( void ) {
 }
 
 Contact::Contact( void ) {
-	static int index = 0;
+/* 	static int index = 0;
 	std::cout << C_GRY << "Contact " << index << " has been created" << C_WHT << std::endl;
-	index++;
-	return;
+	index++; */
 }
 
 Contact::~Contact( void ) {
-	static int index = 8;
+/* 	static int index = 8;
 	std::cout << C_GRY << "Contact " << index << " has been destroyed" << C_WHT << std::endl;
-	index--;
-	return;
+	index--; */
 }

@@ -56,11 +56,9 @@ void Phonebook::addContact ( void ) {
 }
 
 Phonebook::Phonebook( void ) : _m_nbContact(0), _m_index(0) {
-	std::cout << C_GRY << "Phonebook has been created" << C_WHT << std::endl;
-	return;
+	//std::cout << C_GRY << "Phonebook has been created" << C_WHT << std::endl;
 }
 
 Phonebook::~Phonebook( void ) {
-	std::cout << C_GRY << "Phonebook has been destroyed" << C_WHT << std::endl;
-	return;
+	//std::cout << C_GRY << "Phonebook has been destroyed" << C_WHT << std::endl;
 }
