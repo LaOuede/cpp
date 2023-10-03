@@ -20,6 +20,7 @@ class Contact {
 		void displayContact ( void );
 		void setContact ( void );
 		std::string getInfos ( std::string element );
+		std::string reSize ( std::string element );
 
 	private:
 		std::string _m_firstName;

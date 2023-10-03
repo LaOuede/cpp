@@ -1,4 +1,5 @@
-#include <iostream>
+#include <iostream> // std::cout, std::endl
+#include <iomanip> // std::setw
 #include <string>
 #include "Phonebook.hpp"
 #include "Contact.hpp"
@@ -6,11 +7,12 @@
 int main( void ) {
 	Phonebook phonebook;
 	std::string cmd;
-	int index = 0;
+	int index = 1;
 
-	std::cout << "--- Welcome to 📞 Phonebook 📞 ---" << std::endl;
+	std::cout << std::endl;
+	std::cout << C_BOL << "--- Welcome to 📞 Phonebook 📞 ---\n" << C_WHT << std::endl;
 
-	while (index < 8) {
+	while (index < 9) {
 		std::cout << "🔵 -> ";
 		std::cin >> cmd;
 		if (cmd == "ADD") {
@@ -23,10 +25,10 @@ int main( void ) {
 			phonebook.searchContact(index);
 		}
 		else if (cmd == "EXIT") {
-			std::cout << "quiting program..." << std::endl;
-			exit (0);
+			std::cout << C_BOL << "\n------- quitting program... ------\n" << std::endl;
+			return 0;
 		}
-		if (index == 7)
+		if (index == 8)
 			index = 0;
 	}
 	return 0;

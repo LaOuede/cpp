@@ -20,6 +20,8 @@ class Phonebook {
 		Phonebook( void );
 		~Phonebook( void );
 		void addContact( int index ) ;
+		bool checkIndex( int i ) ;
+		void displayInfos( int index ) ;
 		void searchContact( int index );
 
 	private:
