@@ -20,6 +20,7 @@ void Phonebook::displayInfos( int nbContact ) {
 		else {
 			cin.clear();
 			cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+			cout << C_RED << "Phonebook : usage : invalid index " << C_WHT << endl;
 		}
 	} while (! cin.fail());
 }
@@ -56,9 +57,9 @@ void Phonebook::addContact ( void ) {
 }
 
 Phonebook::Phonebook( void ) : _m_nbContact(0), _m_index(0) {
-	//std::cout << C_GRY << "Phonebook has been created" << C_WHT << std::endl;
+	std::cout << C_GRY << "Phonebook constructor called" << C_WHT << std::endl;
 }
 
 Phonebook::~Phonebook( void ) {
-	//std::cout << C_GRY << "Phonebook has been destroyed" << C_WHT << std::endl;
+	std::cout << C_GRY << "Phonebook destructor called" << C_WHT << std::endl;
 }

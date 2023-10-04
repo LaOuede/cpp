@@ -3,6 +3,7 @@
 
 # define C_WHT "\e[0m"
 # define C_BOL "\e[1m"
+# define C_RED "\e[31m"
 # define C_BLU "\e[34m"
 # define C_GRY "\e[90m"
 
