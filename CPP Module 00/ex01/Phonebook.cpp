@@ -74,6 +74,23 @@ void Phonebook::displayTab( void ) {
 	cout << "*-------------------------------------------*\n" << endl;
 }
 
+void Phonebook::fillTab( void ) {
+	for (_m_index = 0; _m_index < 8; _m_index++){
+		if (_m_nbContact <= 7)
+			_m_nbContact++;
+		cout << "Coucou" << endl;
+		_m_contacts[_m_index].get_firstName() = "Stephen";
+		cout << _m_contacts[_m_index].get_firstName() << endl;
+		_m_contacts[_m_index].get_lastName() = "Strange";
+		_m_contacts[_m_index].get_nickname() = "DrStrange";
+		_m_contacts[_m_index].get_phoneNumber() = "4185559999";
+		_m_contacts[_m_index].get_darkestSecret() = "Scepticism";
+	}
+	if (_m_index == 8)
+		_m_index = 0;
+	displayTab();
+}
+
 std::string Phonebook::getInfos( std::string element, int index ) {
 	if (element == "firstName") {
 		if (_m_contacts[index].get_firstName().size() > 10)

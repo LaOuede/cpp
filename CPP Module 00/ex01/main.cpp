@@ -8,6 +8,10 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+#ifndef EVAL
+# define EVAL 0
+#endif
+
 void displayStart( void ) {
 	cout << endl;
 	cout << C_BOL << "------- 🟢 Welcome to 📞 Phonebook 📞 --------\n" << C_WHT << endl;
@@ -23,6 +27,8 @@ int main( void ) {
 	std::string cmd;
 
 	displayStart();
+	if (EVAL)
+		phonebook.fillTab();
 	do {
 		cout << "🔵 Phonebøøk$ ";
 		cin >> cmd;

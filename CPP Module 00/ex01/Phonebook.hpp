@@ -17,7 +17,7 @@ class Phonebook {
 		void displayContact( int index );
 		void displayInfos( int nbContact );
 		void displayTab( void );
-		void fillTabEval( void );
+		void fillTab( void );
 		std::string getInfos( std::string element, int index );
 		std::string reSize( std::string element );
 		void searchContact( void );
