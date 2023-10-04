@@ -9,7 +9,7 @@ using std::cout;
 using std::endl;
 
 #ifndef EVAL
-# define EVAL 0
+# define EVAL 1
 #endif
 
 void displayStart( void ) {

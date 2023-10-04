@@ -9,15 +9,23 @@
 
 class Contact {
 	public:
+		// Constructor & Destructor
 		Contact( void );
 		~Contact( void );
-		std::string &get_firstName( void );
-		std::string &get_lastName( void );
-		std::string &get_nickname( void );
-		std::string &get_phoneNumber( void );
-		std::string &get_darkestSecret( void );
+		// Getters & setters
+		const std::string &get_firstName( void ) const ;
+		const std::string &get_lastName( void ) const ;
+		const std::string &get_nickname( void ) const ;
+		const std::string &get_phoneNumber( void ) const ;
+		const std::string &get_darkestSecret( void ) const ;
+		void set_firstName (const std::string &firstName) ;
+		void set_lastName (const std::string &lastName) ;
+		void set_nickname (const std::string &nickname) ;
+		void set_phoneNumber (const std::string &phoneNumber) ;
+		void set_darkestSecret (const std::string &darkestSecret) ;
 
 	private:
+		// Attributes
 		std::string _m_firstName;
 		std::string _m_lastName;
 		std::string _m_nickname;

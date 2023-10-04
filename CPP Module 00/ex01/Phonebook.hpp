@@ -11,8 +11,10 @@
 
 class Phonebook {
 	public:
+		// Constructor & Destructor
 		Phonebook( void );
 		~Phonebook( void );
+		// Methods
 		void addContact( void );
 		void displayContact( int index );
 		void displayInfos( int nbContact );
@@ -24,6 +26,7 @@ class Phonebook {
 		void setContact( int index );
 
 	private:
+		// Attributes
 		Contact _m_contacts[8];
 		int _m_nbContact;
 		int _m_index;

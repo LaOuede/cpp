@@ -78,17 +78,14 @@ void Phonebook::fillTab( void ) {
 	for (_m_index = 0; _m_index < 8; _m_index++){
 		if (_m_nbContact <= 7)
 			_m_nbContact++;
-		cout << "Coucou" << endl;
-		_m_contacts[_m_index].get_firstName() = "Stephen";
-		cout << _m_contacts[_m_index].get_firstName() << endl;
-		_m_contacts[_m_index].get_lastName() = "Strange";
-		_m_contacts[_m_index].get_nickname() = "DrStrange";
-		_m_contacts[_m_index].get_phoneNumber() = "4185559999";
-		_m_contacts[_m_index].get_darkestSecret() = "Scepticism";
+		_m_contacts[_m_index].set_firstName("Stephen");
+		_m_contacts[_m_index].set_lastName("Strange");
+		_m_contacts[_m_index].set_nickname("DrStrange");
+		_m_contacts[_m_index].set_phoneNumber("4185559999");
+		_m_contacts[_m_index].set_darkestSecret("Scepticism");
 	}
 	if (_m_index == 8)
 		_m_index = 0;
-	displayTab();
 }
 
 std::string Phonebook::getInfos( std::string element, int index ) {
@@ -125,16 +122,23 @@ void Phonebook::searchContact ( void ) {
 }
 
 void Phonebook::setContact( int index ) {
+	std::string element;
+
 	cout << C_BLU << "\n----- Complete informations ------" << C_WHT << endl;
 	cout << "First name : ";
-	cin >> _m_contacts[index].get_firstName();
+	cin >> element;
+	_m_contacts[index].set_firstName(element);
 	cout << "Last name : ";
-	cin >> _m_contacts[index].get_lastName();
+	cin >> element;
+	_m_contacts[index].set_lastName(element);
 	cout << "Nickname : ";
-	cin >> _m_contacts[index].get_nickname();
+	cin >> element;
+	_m_contacts[index].set_nickname(element);
 	cout << "Phone Number : ";
-	cin >> _m_contacts[index].get_phoneNumber();
+	cin >> element;
+	_m_contacts[index].set_phoneNumber(element);
 	cout << "Darkest secret : ";
-	cin >> _m_contacts[index].get_darkestSecret();
+	cin >> element;
+	_m_contacts[index].set_darkestSecret(element);
 	cout << C_BLU << "--------- Contact saved! ---------\n" << C_WHT << endl;
 }
