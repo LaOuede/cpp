@@ -7,6 +7,38 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+Contact::Contact( void ) {
+/* 	static int index = 0;
+	std::cout << C_GRY << "Contact " << index << " has been created" << C_WHT << std::endl;
+	index++; */
+}
+
+/* std::string &Contact::get_firstName ( void ) {
+	return this->_m_firstName;
+}
+
+std::string &Contact::get_lastName ( void ) {
+	return this->_m_lastName;
+}
+
+std::string &Contact::get_nickname ( void ) {
+	return this->_m_nickname;
+}
+
+std::string &Contact::get_phoneNumber ( void ) {
+	return this->_m_phoneNumber;
+}
+
+std::string &Contact::get_darkestSecret ( void ) {
+	return this->_m_darkestSecret;
+} */
+
+Contact::~Contact( void ) {
+/* 	static int index = 8;
+	std::cout << C_GRY << "Contact " << index << " has been destroyed" << C_WHT << std::endl;
+	index--; */
+}
+
 std::string Contact::reSize( std::string str ) {
 	std::string new_str;
 
@@ -57,16 +89,4 @@ void Contact::setContact( void ) {
 	cout << "Darkest secret : ";
 	cin >> _m_darkestSecret;
 	cout << C_BLU << "--------- Contact saved! ---------\n" << C_WHT << endl;
-}
-
-Contact::Contact( void ) {
-/* 	static int index = 0;
-	std::cout << C_GRY << "Contact " << index << " has been created" << C_WHT << std::endl;
-	index++; */
-}
-
-Contact::~Contact( void ) {
-/* 	static int index = 8;
-	std::cout << C_GRY << "Contact " << index << " has been destroyed" << C_WHT << std::endl;
-	index--; */
 }
