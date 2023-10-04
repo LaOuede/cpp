@@ -14,10 +14,10 @@ int main(int argc, char **argv) {
 	for (int arg = 1; arg < argc; arg++) {
 		std::string str = argv[arg];
 		for (std::string::size_type i = 0; i < str.length(); i++) {
-			cout << (char)toupper(str[i]);
+			cout << (char)std::toupper(str[i]);
 		}
 	}
-	
+
 	cout << endl;
 	return 0;
 }
