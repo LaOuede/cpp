@@ -14,6 +14,7 @@ void displayStart( void ) {
 	cout << "**********************************************" << endl;
 	cout << "* Type "<< C_BLU << "ADD " << C_WHT << "to add a new contact to Phonebook *" << endl;
 	cout << "* Type "<< C_BLU << "SEARCH " << C_WHT << "to display contacts            *" << endl;
+	cout << "* Type "<< C_BLU << "EXIT " << C_WHT << "to quit the programts            *" << endl;
 	cout << "**********************************************\n" << endl;
 }
 
@@ -29,7 +30,7 @@ int main( void ) {
 			phonebook.searchContact();
 		else if (cmd == "ADD")
 			phonebook.addContact();
-		else
+		else if (cmd != "EXIT")
 			cout << C_RED << "Phonebook : usage : command not found " << C_WHT << endl;
 	} while (!cin.fail() && cmd != "EXIT");
 	cout << C_BOL << "\n----------- 🔴 quitting program... -----------\n" << C_WHT << endl;

@@ -14,9 +14,14 @@ class Phonebook {
 		Phonebook( void );
 		~Phonebook( void );
 		void addContact( void );
+		void displayContact( int index );
 		void displayInfos( int nbContact );
 		void displayTab( void );
+		void fillTabEval( void );
+		std::string getInfos( std::string element, int index );
+		std::string reSize( std::string element );
 		void searchContact( void );
+		void setContact( int index );
 
 	private:
 		Contact _m_contacts[8];
