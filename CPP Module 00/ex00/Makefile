@@ -73,7 +73,7 @@ help:
 
 # Open the subject
 pdf:
-	@open https://cdn.intra.42.fr/pdf/pdf/104444/en.subject.pdf
+	@open https://cdn.intra.42.fr/pdf/pdf/105040/fr.subject.pdf#page=6
 
 # Remove objects and executables and remake
 re: clean
@@ -93,4 +93,4 @@ run : all
 	@echo "\n$W>>>>>>>>>>>>>>>>>>>>>>>>> $WTESTS done ✅$W<<<<<<<<<<<<<<<<<<<<<<<<<<\n"
 
 # Avoids file-target name conflicts
-.PHONY: all dir clean help pdf re run
+.PHONY: all clean help pdf re run

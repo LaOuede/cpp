@@ -67,13 +67,17 @@ clean:
 	@echo "\n$W--------- All exec. and archives successfully $Rdeleted ❌$W--------\n"
 	@echo "$W>>>>>>>>>>>>>>>>>>>>> $YCleaning $Wis $Gdone ✅ $W<<<<<<<<<<<<<<<<<<<<<<\n"
 
+# Fill the phonebook with 8 contacts
+eval: CPPFLAGS += -D EVAL=1
+eval: clean all
+
 # Display tools available
 help:
 	@echo "$$HELP"
 
 # Open the subject
 pdf:
-	@open https://cdn.intra.42.fr/pdf/pdf/104444/en.subject.pdf
+	@open https://cdn.intra.42.fr/pdf/pdf/105040/fr.subject.pdf#page=7
 
 # Remove objects and executables and remake
 re: clean
@@ -84,4 +88,4 @@ run : all
 	@./$(NAME)
 
 # Avoids file-target name conflicts
-.PHONY: all dir clean help pdf re run
+.PHONY: all clean eval help pdf re run
