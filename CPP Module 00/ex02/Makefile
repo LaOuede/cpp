@@ -67,8 +67,10 @@ clean:
 	@echo "\n$W--------- All exec. and archives successfully $Rdeleted ❌$W--------\n"
 	@echo "$W>>>>>>>>>>>>>>>>>>>>> $YCleaning $Wis $Gdone ✅ $W<<<<<<<<<<<<<<<<<<<<<<\n"
 
+# Add subject horodator
 eval: CPPFLAGS += -D DEBUG=1
-eval: clean all
+eval: all
+	./account > out.log && diff Journal.log out.log > final.log
 
 # Display tools available
 help:
@@ -87,4 +89,4 @@ run : all
 	@./$(NAME)
 
 # Avoids file-target name conflicts
-.PHONY: all dir clean help pdf re run
+.PHONY: all clean eval help pdf re run
