@@ -57,7 +57,7 @@ int Account::checkAmount( void ) const { return this->_amount; };
 /* Other functions                                                            */
 /* ************************************************************************** */
 void Account::displayAccountsInfos( void ) {
-	Account::_displayTimestamp();
+	_displayTimestamp();
 	cout << "accounts:" << getNbAccounts()
 		<< ";total:" << getTotalAmount()
 		<< ";deposits:" << getNbDeposits()
@@ -65,7 +65,7 @@ void Account::displayAccountsInfos( void ) {
 }
 
 void Account::displayStatus( void ) const {
-	Account::_displayTimestamp();
+	_displayTimestamp();
 		cout << "index:" << this->_accountIndex
 		<< ";amount:" << checkAmount()
 		<< ";deposits:" << this->_nbDeposits
@@ -74,11 +74,11 @@ void Account::displayStatus( void ) const {
 
 void Account::_displayTimestamp( void ) {
 	if (DEBUG) {
-		cout << "[19920104_091532]";
+		cout << "[19920104_091532] ";
 		return ;
 	}
 	time_t rawtime;
-	struct tm * ptm;
+	struct tm *ptm;
 
 	time ( &rawtime );
 	ptm = gmtime ( &rawtime );
