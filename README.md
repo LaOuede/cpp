@@ -2,7 +2,7 @@
   <img src="https://github.com/LaOuede/42-project-badges/blob/main/badges/cppe.png" />
 </p>
 
-<h1 align=center>C++</h1>
+<h1 align=center>CPP</h1>
 
 <p align=center>
 Work in progress...
