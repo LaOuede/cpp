@@ -14,6 +14,18 @@ The <b>C++</b> project involves an intensive, immersive coding experience in ord
 
 </div>
 
+---
+
+<h3 align="left">What I've learned 📚</h3>
+
+So far, I've acquired basic knowledge in C++ :
+- Module_00 : namespaces, classes, member functions, stdio streams, initialization lists, static, const...
+- Module_01 : memory allocation, member pointers, references, switch instruction
+- Module_02 : ad-hoc polymorphism, operator overloading and canonical form
+- Module_03 : inheritance
+- Module_04 : polymorphism through subtyping, abstract classes and interfaces
+
+Module_05 to 09 in progress...
 
 <div align="center">
   
