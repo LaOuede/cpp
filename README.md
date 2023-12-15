@@ -31,3 +31,9 @@ I've acquired basic knowledge in C++ :
 Go to [42 Québec](https://42quebec.com/) to discover the course ! 👈
 </div>
 
+---
+
+<div align="center">
+
+To look at [my next 42 project](https://github.com/LaOuede/42-ft_irc) !
+</div>
